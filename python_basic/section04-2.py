@@ -56,3 +56,11 @@ print(a[:4])
 print(b[0:4:2]) # 세번째 넣으면 세번째 수만큼 점프하면서 슬라이싱
 print(b[1:-2])
 print(b[::-1])
+
+print()
+
+a = 'abcdefg'
+b = 'hhhhhhh'
+#c = a[0] + b[0] + a[1] + b[1] + a[2] + b[2] + a[3] + b[3] + a[4]+ b[4] + a[5] 
+c = a[i] + b[i] while len(c) < 11
+print(c)
