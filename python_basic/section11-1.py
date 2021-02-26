@@ -63,3 +63,25 @@ with open('python_basic/resource/sample4.csv', 'w', newline='') as f:
 # pip install xlrd
 # pip install openpyxl
 # pip install pandas
+
+import pandas as pd
+
+# sheetname = '시트명' 또는 숫자, header=3, skiprow=숫자
+xlsx = pd.read_excel('python_basic/resource/sample.xlsx')
+
+# 상위 데이터 확인
+print(xlsx.head())
+print()
+print()
+
+# 하위 데이터 확인
+print(xlsx.tail())
+print()
+print()
+
+# 데이터 확인
+print(xlsx.shape) #행, 열
+
+# 엑셀 or CSV 다시 쓰기
+xlsx.to_excel('python_basic/resource/result.xlsx', index=False)
+xlsx.to_csv('python_basic/resource/result.csv', index=False)
